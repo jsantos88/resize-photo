@@ -1,25 +1,30 @@
-# Resized Photo
+# Resize Photo
 
 B2W Challenge - Resized Photo
 
-## Getting Started
+## Inicial
 
-These instructions will get you a copy of the project up and running on your local machine for development.
+Instruções para build do projeto
 
-### Prerequisites
+### Pré requisitos
 
 * Java 8
 * Maven
 
-### Building
+### Build
 
 ```
-git clone https://gitlab.wmxp.com.br/ims/ims-marketplace
-cd ims-marketplace
+git clone https://github.com/jsantos88/resize-photo.git
+cd resize-photo
 mvn clean package
 ```
 ### Running Application
 
 ```
-java -jar target/ims-marketplace.jar
+java -jar target/resize-photo.jar
 ```
+
+Obs.: Para o funcionamento da aplicação
+1) Execute a api http://localhost:8080/resizephoto (isso lê o json inicial e gera as imagens)
+2) Para obter as urls com as imagens redimensionadas: http://localhost:8080/resizephoto/urls
+3) Basta clicar no link desejado para visualizar as imagens redimensionadas
